@@ -146,27 +146,24 @@ function Home() {
             </Typography>
             <Grid container spacing={2}>
               <Grid item>
-                <Chip
-                  label="Excellent Communication Skills"
-                  variant="outlined"
-                />
+                <Chip label="Excellent Communication Skills" variant="filled" />
               </Grid>
               <Grid item>
-                <Chip label="Agile Development Experience" variant="outlined" />
+                <Chip label="Agile Development Experience" variant="filled" />
               </Grid>
               <Grid item>
                 <Chip
                   label="Cross-cultural Communication Skills"
-                  variant="outlined"
+                  variant="filled"
                 />
               </Grid>
               <Grid item>
-                <Chip label="User Experience (UX)" variant="outlined" />
+                <Chip label="User Experience (UX)" variant="filled" />
               </Grid>
               <Grid item>
                 <Chip
                   label="Adamant about advocating for the customer"
-                  variant="outlined"
+                  variant="filled"
                 />
               </Grid>
             </Grid>
