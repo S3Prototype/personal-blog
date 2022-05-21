@@ -1,0 +1,101 @@
+---
+title: Why we need data engineers
+description: Data Engineers are the bridge between data and the experts who analyze it. Here's why Data Engineers matter.
+slug: why-we-need-data-engineers
+authors: shaquil
+tags: [hello, docusaurus-v2]
+image: https://i.imgur.com/mErPwqL.png
+hide_table_of_contents: false
+---
+
+import ReactPlayer from 'react-player'
+
+In a world increasingly run by algorithms, data is one of the most valuable resources a business can have. But just collecting data isn't good enough—we also need to organize that data so it can be analyzed by specialists and used by algorithms and AI. Data Engineers bridge this gap by creating the infrastructure for ingesting, formatting and writing large data.
+
+<!--truncate-->
+
+## Why does data matter?
+
+Let's pause on the Data Engineer talk for a second to discuss data in general. Why does it matter?
+
+The answer is obvious but important—because data informs business decisions. If you start, say, a social network app for cab drivers, data about when, why and how drivers are using your app can help you decide which new features to build, and which old features to drop. But just _having_ this data is meaningless if it's not reliable.
+
+The first step to having reliable data is optimizing how you collect it. This is not in the purview of data engineers.
+
+The second step is optimizing how you organize it. For your small cab driver app, this could be as simple as storing it in a SQL database with well-curated tables. You could create a GraphQL API that fetches that data and displays it in a visually-pleasing way, and your team could analyze the data and draw up proposals for new app features.
+
+But what if your data isn't small? What if your cab driver app is called Uber, and it's the biggest ride-hailing service in the world? Now your dataset covers millions of users, and you're collecting it second by second, every day. 
+
+Uber specifically uses data to track the performance of key features, like ride shortcuts and its rewards program. According to [a document published on their engineering site](https://eng.uber.com/how-data-shapes-the-uber-rider-app/), they ask questions like, "How many users had the rider shortcut section displayed?" and "How many users clicked on one of the shortcuts?"
+
+These are simple questions, but with extreme amounts of data they can be hard to answer.
+
+Why? Let's talk about the problems Big Data causes.
+
+## The difficulties of working with data
+
+Let's run an experiment.
+
+Most likely, you have a 1TB or larger hard drive in your computer. If not, perhaps you have a service like DropBox or Google Drive, which you've filled with tons of media files.
+
+I want you to navigate to the root of that drive, whether it's in DropBox or your PC, and search for a file.
+
+Pretty slow, right?
+
+The thing is, your media files have logical names and are stored in a structured hierarchy of folders—even if you didn't particularly organize them. Big datasets are multiple orders of magnitudes larger than a terabyte, and sometimes the data isn't even stored in a particularly structured way.
+
+So imagine you're a data scientist or data analyst, and you want to learn about a relationship between data that has a particular set of characteristics. When you run your search query, it could takes hours to get results. If you need to run another, you'll be waiting hours again.
+
+Data engineers clean up data by writing software that transforms it into a more organized format, often making it fit the particular needs of the data analysts who will be using it.
+
+When those analysts run their queries on data cleaned up by a data engineer, the results come in much faster, empowering them to be more efficient and accurate with their studies.
+
+This isn't to mention countless other big data issues that data engineers resolve, such as correlating information from different sources, often by consolidating the various APIs these sources expose their data with.
+
+With so many problems to solve, data engineers are paid on average much better than many other types of engineers, though they also tend to work a lot more.
+
+One of the biggest problems is that data engineering is not the most popular career path, so demand is rapidly outpacing supply.
+
+You might wonder why we can't automate their work.
+
+Actually, some companies are trying to help do that.
+
+## Tools that help data engineers
+
+Nothing can replace a data engineer, but automation tools can make their jobs, and their CEO's lives, far easier.
+
+Here are a few companies in the data engineer automation space:
+
+### Databricks
+
+Started by [the minds behind Apache Spark](https://en.wikipedia.org/wiki/Ali_Ghodsi), Databricks is relied upon by corporations as massive as Amazon and T Mobile to streamline their data engineer and data science problems. Their killer app is the Data Lakehouse which, [according to their official glossary of terms](https://databricks.com/glossary/data-lakehouse#:~:text=A%20data%20lakehouse%20is%20a,(ML)%20on%20all%20data.):
+
+> "combines the flexibility, cost-efficiency, and scale of data lakes with the data management and ACID transactions of data warehouses, enabling business intelligence (BI) and machine learning (ML) on all data."
+>
+> — Databricks
+
+That's a lot of jargon! 😓
+
+Check out their promotional video for more information:
+
+<ReactPlayer controls url='https://youtu.be/02DBOfYrYT0' />
+
+### Apache Airflow
+
+This tool helps data engineers in manage and author workflows. For example, if events occur while an engineer's pipeline is ingesting data, Airflow will alert the team via email, slack messages and other media. It also enables automated data integrity testing, and integrates neatly with popular tools like Talend, Azure, Zendesk and Snowflake.
+
+You can read more in [Astronomer.io's in-depth write-up on Apache Airflow](https://www.astronomer.io/blog/apache-airflow-for-data-engineers/).
+
+### Ascend.io
+
+This company is the reason I'm writing this article. While doing research on potentially pursuing a Cloud Architect degree, I stumbled upon Ascend.io, a rapidly-growing startup whose mission is to automate [the ETL process](https://www.talend.com/resources/what-is-etl/) for data engineers.
+
+Ascend gives data engineers a visual experience where they can create automated processes to extract data from disparate sources, feed that data into SQL or PySpark code that transforms it, and load that data into destinations in any of the most popular file formats.
+
+When changes are made along the pipeline, such as a query being edited to add or drop rows or columns from a table, Ascend automatically re-runs the process, skipping the ingest stage to avoid needlessly re-fetching data. You can watch their explainer video below
+
+<ReactPlayer controls url='https://www.youtube.com/watch?v=M4adp5BE5WU' />
+
+## The future of data engineering
+
+Data engineering is always evolving as the amount of data and needs for that data change. It'll be exciting to see what the future holds.
