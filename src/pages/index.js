@@ -15,6 +15,8 @@ import Project from "../components/Project";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Experience from "../components/Experience";
+import Chip from "@mui/material/Chip";
+
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
@@ -41,7 +43,7 @@ function Home() {
     <Layout
       //title={` ${siteConfig.title}`}
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      description="Shaquil Hansford's personal blog."
     >
       <Grid container spacing={2} style={{ padding: "5%" }} className="hero">
         {/*Personal Intro */}
@@ -58,22 +60,116 @@ function Home() {
           <animated.div style={animatedTexts[1]}>
             <Typography variant="body1">
               <Translate>
-                A Melbourne University graduate who has a great passion for web
-                development. While keeping updated with the most recent
-                technologies, I always seek to improve and grow as a
-                professional full-stack web developer as well as a person.
+                A technical writer and javascript developer who empowers your
+                users to do great things with your products. I wrap my head
+                around your automation tools, then I write brilliant copy and
+                code samples to teach your customers how to do it too.
               </Translate>{" "}
             </Typography>
           </animated.div>
           &nbsp;
           <animated.div style={animatedTexts[2]}>
             <Typography variant="h6" gutterBottom>
-              <Translate>My Skills:</Translate>
+              <Translate>Technical Skills:</Translate>
             </Typography>
-            <Typography variant="body1" gutterBottom>
-              React.js、React Native、Node.js、Material UI、JavaScript、HTML5
-              etc.
+            <Grid container spacing={2}>
+              <Grid item>
+                <Chip label="React" variant="filled" color="primary" />
+              </Grid>
+              <Grid item>
+                <Chip label="TypeScript" variant="filled" color="primary" />
+              </Grid>
+              <Grid item>
+                <Chip label="NextJS" variant="filled" color="primary" />
+              </Grid>
+              <Grid item>
+                <Chip label="Git" variant="filled" color="primary" />
+              </Grid>
+              <Grid item>
+                <Chip label="GraphQL" variant="filled" color="primary" />
+              </Grid>
+              <Grid item>
+                <Chip label="MongoDB" variant="filled" color="primary" />
+              </Grid>
+              <Grid item>
+                <Chip label="NodeJS" variant="filled" color="primary" />
+              </Grid>
+              <Grid item>
+                <Chip label="ExpressJS" variant="filled" color="primary" />
+              </Grid>
+              <Grid item>
+                <Chip label="Jest" variant="filled" color="primary" />
+              </Grid>
+              <Grid item>
+                <Chip label="Redis" variant="filled" color="primary" />
+              </Grid>
+              <Grid item>
+                <Chip label="SocketIO" variant="filled" color="primary" />
+              </Grid>
+            </Grid>
+          </animated.div>
+          &nbsp;
+          <animated.div style={animatedTexts[2]}>
+            <Typography variant="h6" gutterBottom>
+              <Translate>Docs Skills:</Translate>
             </Typography>
+            <Grid container spacing={2}>
+              <Grid item>
+                <Chip label="Markdown" variant="filled" color="secondary" />
+              </Grid>
+              <Grid item>
+                <Chip
+                  label="Docs-as-code workflows"
+                  variant="filled"
+                  color="secondary"
+                />
+              </Grid>
+              <Grid item>
+                <Chip label="Docusaurus" variant="filled" color="secondary" />
+              </Grid>
+              <Grid item>
+                <Chip label="Gitbook" variant="filled" color="secondary" />
+              </Grid>
+              <Grid item>
+                <Chip
+                  label="Medium Publications"
+                  variant="filled"
+                  color="secondary"
+                />
+              </Grid>
+            </Grid>
+          </animated.div>
+          &nbsp;
+          <animated.div style={animatedTexts[2]}>
+            <Typography variant="h6" gutterBottom>
+              <Translate>Soft Skills:</Translate>
+            </Typography>
+            <Grid container spacing={2}>
+              <Grid item>
+                <Chip
+                  label="Excellent Communication Skills"
+                  variant="outlined"
+                />
+              </Grid>
+              <Grid item>
+                <Chip label="Agile Development Experience" variant="outlined" />
+              </Grid>
+              <Grid item>
+                <Chip
+                  label="Cross-cultural Communication Skills"
+                  variant="outlined"
+                />
+              </Grid>
+              <Grid item>
+                <Chip label="User Experience (UX)" variant="outlined" />
+              </Grid>
+              <Grid item>
+                <Chip
+                  label="Adamant about advocating for the customer"
+                  variant="outlined"
+                />
+              </Grid>
+            </Grid>
           </animated.div>
           &nbsp;
           <animated.p style={animatedTexts[3]}>
@@ -121,12 +217,12 @@ function SocialLinks({ animatedProps, ...props }) {
           </Typography>
         </Grid>
         <Grid item>
-          <a href="https://www.linkedin.com/in/haochen-qi-a36393171/">
+          <a href="https://www.linkedin.com/in/shaquil-hansford/">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </Grid>
         <Grid item>
-          <a href="https://github.com/HaochenQ">
+          <a href="https://github.com/S3Prototype">
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </Grid>

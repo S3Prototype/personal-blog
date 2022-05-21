@@ -4,43 +4,33 @@ import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
 import Translate from "@docusaurus/Translate";
 const experience = [
   {
-    company: "University of Melbourne",
-    position: "Master of Information Technology",
-    date: "July 2018 - December 2020 ",
+    company: "TakeShape IO",
+    position: "Technical Writer",
+    date: "2021 - 2022 ",
     desc: {
-      1: "Gained knowledge about fundamentals of the fields of Information Technology and Computer Science.",
-      2: "In-depth understanding of modern cloud-driven network architecture with practice with Unimelb advanced cloud platform-Nectar.",
-      3: "Acquired a comprehensive understanding of the integration of Machine Learning models and modern Web Development by finishing the graduation project.",
+      1: "Self-planned and self-directed the growth of their docs site from a few articles to over 30 guides.",
+      2: "Reported and communicated multiple UX issues and user-facing high-priority bugs to the engineering team with bug tickets that included video, GIFs and reproduction steps",
+      3: "Led their email-marketing campaign, including onboarding, re-activating cold leads, and segmented promotions.",
     },
   },
   {
-    company: "University of North Carolina",
-    position: "Exchange Graduate",
-    date: "August 2019 - December 2019 ",
+    company: "LI.FI",
+    position: "Researcher",
+    date: "October 2021 - March 2022",
     desc: {
-      1: "Learnt modern web development and got familar with several modern web framworks.",
-      2: "Refined web development skills with hands on projects",
+      1: "Collaborated with the marketing and research teams to produce educational and selling content that drove up usage of the company's product.",
+      2: "Wrote articles and guides that brought the company new connections in the Web3 industry, grew the discord community, and drove up downloads of the company's SDK.",
       3: "Excelled in user experience and user interfaces.",
     },
   },
   {
-    company: "Psych Press",
-    position: "Front-End Developer Intern",
-    date: "March 2020 - July 2020 ",
+    company: "Prolific Digital",
+    position: "Back-End Developer",
+    date: "2021 - 2022",
     desc: {
-      1: "Implemented reusable components which helped save development time and budget for our team.",
-      2: "Involved in the planning and web design of a new project, designed the structure of the website with React and Material UI.",
-      3: "Collaborated with product team members to implement new feature development.",
-    },
-  },
-  {
-    company: "Wicrecend",
-    position: "Azure App Service Engineer",
-    date: "Mid 2021 - till now ",
-    desc: {
-      1: "Learnt the structure of Microsoft Azure App Service/Function App in a depth.",
-      2: "Had put the knowledge regarding App Service/Function App in use helping MS clients empower their bussiness.",
-      3: "Improved the satisfaction of MS clients to Azure Products/Services",
+      1: "Built a TypeScript SDK for headless e-commerce Drupal store developers.",
+      2: "Lead documenting the SDK in GitBook.",
+      3: "Worked closely with a development team as well as the clients, running a few client meetings when our team lead was unable to make it.",
     },
   },
 ];

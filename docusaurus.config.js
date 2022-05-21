@@ -1,22 +1,25 @@
+require("dotenv").config();
+const path = require("path");
+const redirects = require("./redirects");
+
 module.exports = {
-  title: "Haochen",
-  tagline: "Learning is a Lifelong Process",
+  title: "Shaquil",
+  tagline: "Technical Writer | JavaScript Developer",
   //disableTitleTagline: true,
   //titleDelimiter: "*",
-  url: "https://haochenqi.com/",
+  url: "https://shaquilhansford.com/",
   baseUrl: "/",
   //onBrokenLinks: "throw",
   //onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
-  //organizationName: "Haochen", // Usually your GitHub org/user name.
-  projectName: "Haochen-Blog", // Usually your repo name.
+  favicon: "img/favicon.png",
+  projectName: "Shaquil's Personal Blog", // Usually your repo name.
   stylesheets: ["https://fonts.font.im/css?family=Raleway:500,700"],
   themeConfig: {
     navbar: {
-      title: "Haochen",
+      title: "Shaquil Hansford",
       logo: {
         alt: "My Site Logo",
-        src: "img/haochen.logo.svg",
+        src: "img/logo.png",
       },
       items: [
         // {
@@ -27,9 +30,8 @@ module.exports = {
         // },
         { type: "localeDropdown", position: "right" },
         { to: "blog", label: "Blog", position: "right" },
-
         {
-          href: "https://github.com/HaochenQ",
+          href: "https://github.com/S3Prototype",
           label: "GitHub",
           position: "right",
         },
@@ -43,11 +45,11 @@ module.exports = {
           items: [
             {
               label: "Linkedin",
-              href: "https://www.linkedin.com/in/haochen-qi-a36393171/",
+              href: "https://www.linkedin.com/in/shaquil-hansford/",
             },
             {
-              label: "Facebook",
-              href: "https://www.facebook.com/haochen.qi.520",
+              label: "Twitter",
+              href: "https://www.twitter.com/shaquilhansford",
             },
           ],
         },
@@ -90,12 +92,12 @@ module.exports = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/HaochenQ",
+              href: "https://github.com/S3Prototype",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Haochen. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Shaquil Hansford. Built with Docusaurus.`,
     },
   },
   presets: [
@@ -105,8 +107,23 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/",
+          editUrl: "https://github.com/S3Prototype/personal-blog",
+        },
+        blog: {
+          path: "blog",
+          blogSidebarTitle: "Blog Posts",
+          blogSidebarCount: 20,
+          blogTitle: "Shaquil Hansford's Technical Writing Blog",
+          blogDescription: "Shaquil Hansford's Technical Writing Blog.",
+          authorsMapPath: "./authors/authors.yml",
+          postsPerPage: 20,
+          feedOptions: {
+            type: "all",
+            title: "Shaquil Hansford's Blog Feed",
+            copyright: `Copyright © ${new Date().getFullYear()} Shaquil Hansford.`,
+          },
+          showReadingTime: true,
+          routeBasePath: "blog",
         },
         blog: {
           path: "./blog",
@@ -119,15 +136,36 @@ module.exports = {
       },
     ],
   ],
+  plugins: [
+    [
+      "@docusaurus/plugin-ideal-image",
+      {
+        sizes: [320, 640, 960],
+      },
+    ],
+    [
+      "@easyops-cn/docusaurus-search-local",
+      {
+        hashed: true,
+        language: "en",
+        searchResultLimits: 10,
+        indexDocs: true,
+        docsRouteBasePath: "/",
+        indexBlog: true,
+        blogRouteBasePath: "/guides",
+      },
+    ],
+    ["@docusaurus/plugin-client-redirects", { redirects }],
+  ],
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "zh-cn"],
+    locales: ["en", "ja-JP"],
     localeConfigs: {
       en: {
         label: "English",
       },
-      "zh-cn": {
-        label: "中文",
+      "ja-JP": {
+        label: "日本語",
       },
     },
   },

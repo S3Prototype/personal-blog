@@ -1,9 +1,18 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { faExternalLinkAlt, faLink } from "@fortawesome/free-solid-svg-icons";
 import useBaseUrl from "@docusaurus/useBaseUrl";
-const Project = ({ description, title, github, stack, url, image, index }) => {
+const Project = ({
+  description,
+  title,
+  github,
+  docsUrl,
+  stack,
+  url,
+  image,
+  index,
+}) => {
   return (
     <article className="work">
       <div className="work-img" onClick={() => window.open(url)}>
@@ -20,8 +29,8 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
           })}
         </div>
         <div className="work-links">
-          <a href={github}>
-            <FontAwesomeIcon icon={faGithub} className="work-icon" />
+          <a href={docsUrl}>
+            <FontAwesomeIcon icon={faLink} className="work-icon" />
           </a>
           <a href={url}>
             <FontAwesomeIcon icon={faExternalLinkAlt} className="work-icon" />

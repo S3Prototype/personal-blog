@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import Translate from "@docusaurus/Translate";
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm("mbjpwgpo");
+  const [state, handleSubmit] = useForm("xzbooppq");
   const formRef = useRef();
 
   useEffect(() => {
