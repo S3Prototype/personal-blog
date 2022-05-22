@@ -1,5 +1,7 @@
-# My Website
+# Shaquil Hansford's personal blog
 
-Welcom to my website [haochenqi.com](https://haochenqi.com)
+This is my personal blog [shaquilhansford.com](https://shaquilhansford.com)
 
-On my website, you can check my recent projects, read my blogs and contact me!
+Use this site to check out my recent writings and message me.
+
+Code based on https://haochenqi.com
