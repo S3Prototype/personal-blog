@@ -1,6 +1,9 @@
 {
   "Hello! I am": {
-    "message": "您好！我是"
+    "message": "こんにちは！僕は"
+  },
+  "Shaquil": {
+    "message": "シャキル"
   },
   "theme.NotFound.title": {
     "message": "Page Not Found",
