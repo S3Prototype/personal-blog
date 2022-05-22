@@ -42,8 +42,8 @@ function Home() {
   return (
     <Layout
       //title={` ${siteConfig.title}`}
-      title={`Hello from ${siteConfig.title}`}
-      description="Shaquil Hansford's personal blog."
+      title={`Shaquil Hansford's personal site`}
+      description="Shaquil Hansford's personal site."
     >
       <Grid container spacing={2} style={{ padding: "5%" }} className="hero">
         {/*Personal Intro */}
