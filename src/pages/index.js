@@ -186,7 +186,7 @@ function Home() {
         <Grid item xs={12} lg={6} className="homeImg">
           {/* <img src={useBaseUrl(image)} className="image" /> */}
           <animated.img
-            src={useBaseUrl("img/programming.svg")}
+            src={useBaseUrl("img/programming.png")}
             style={animatedHero}
           />
         </Grid>

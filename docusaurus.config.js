@@ -15,6 +15,18 @@ module.exports = {
   projectName: "Shaquil's Personal Blog", // Usually your repo name.
   stylesheets: ["https://fonts.font.im/css?family=Raleway:500,700"],
   themeConfig: {
+    metadata: [
+      {
+        name: "keywords",
+        content:
+          "technical writer, javascript developer, saas technical writing, documentation developer, content developer",
+      },
+      {
+        name: "description",
+        content:
+          "Shaquil Hansford is a technical writer specializing in SaaS web products. Need to explain your tool to developers? Shaquil can help.",
+      },
+    ],
     navbar: {
       title: "Shaquil Hansford",
       logo: {
