@@ -4,6 +4,16 @@ import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
 import Translate from "@docusaurus/Translate";
 const experience = [
   {
+    company: "Vercel",
+    position: "Senior DX Engineer",
+    date: "2022 - 2024 ",
+    desc: {
+      1: "Built out all of their framework=specific documentation, from popular options like Sveltekit.",
+      2: "Led their Edge and Serverless compute documentation in direct collaboration with the Edge engineering team.",
+      3: "Streamlined the workflow for those outside of the docs team to contribute more to the docs.",
+    },
+  },
+  {
     company: "TakeShape IO",
     position: "Technical Writer",
     date: "2021 - 2022 ",
